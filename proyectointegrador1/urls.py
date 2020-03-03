@@ -17,10 +17,10 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url, include
 from rest_framework import routers
-from report import views
+from distancia import views
 
 router = routers.DefaultRouter()
-router.register(r'reports', views.ReportViewSet)
+router.register(r'distancias', views.DistanciaViewSet)
 
 urlpatterns = [
     url(r'^', include(router.urls)),
