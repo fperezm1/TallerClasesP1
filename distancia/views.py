@@ -26,4 +26,4 @@ def distancia(request):
     # Convierte la respuesta en JSON
     distancia = response.json()
     # Rederiza la respuesta en el template measure
-    return render(request, "templates/distancia/distancia.html", {'distancias': distancia})
+    return render(request, "distancia/distancia.html", {'distancias': distancia})
