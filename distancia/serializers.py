@@ -4,4 +4,4 @@ from .models import Distancia
 class DistanciaSerializer(serializers.ModelSerializer):
     class Meta:
         model = Distancia
-        fields = ('id', 'type', 'value')
+        fields = ('codigo', 'longitud', 'latitud', 'terreno', 'area')

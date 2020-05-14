@@ -3,5 +3,5 @@ from .models import Distancia
 from .serializers import DistanciaSerializer
 
 class DistanciaViewSet(viewsets.ModelViewSet):
-    queryset = Distancia.objects.all().order_by('-created')
+    queryset = Distancia.objects.all()
     serializer_class = DistanciaSerializer
